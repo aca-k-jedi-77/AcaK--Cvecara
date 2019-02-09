@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Potvrda</title>
+	<script src="confirmation.js" defer></script>
+</head>
+<body>
+	<div>Naručili ste <span class="kolruza"></span> ruža, po ceni <span class="cenaruza"></span> dinara.</div>
+	<div>Naručili ste <span class="kolljiljana"></span> ljiljana, po ceni <span class="cenaljiljana"></span> dinara.</div>
+	<div>Naručili ste <span class="kolgerbera"></span> gerbera, po ceni <span class="cenagerbera"></span> dinara.</div>
+	<div>Ukupna cena iznosi <span class="ukCena"></span> dinara.</div>
+
+	<!-- 
+	<script type="text/javascript">
+
+function printr(){
+	var loadedRoses = JSON.parse(sessionStorage.getItem('roses'));
+	var kolruza = document.querySelector(".kolruza");
+	var cenaruza = document.querySelector(".cenaruza");
+	kolruza.textContent = loadedRoses.quantity;
+	cenaruza.textContent = parseInt(loadedRoses.quantity)*parseInt(loadedRoses.price);
+};
+document.addEventListener('load', printr());
+
+function printl(){
+	var loadedLillies = JSON.parse(sessionStorage.getItem('lillies'));
+	var kolljiljana = document.querySelector(".kolljiljana");
+	var cenaljiljana = document.querySelector(".cenaljiljana");
+	kolljiljana.textContent = loadedLillies.quantity;
+	cenaljiljana.textContent = parseInt(loadedLillies.quantity)*parseInt(loadedLillies.price);
+};
+document.addEventListener('load', printl());
+
+function printg(){
+	var loadedGerbers = JSON.parse(sessionStorage.getItem('gerbers'));
+	var kolgerbera = document.querySelector(".kolgerbera");
+	var cenagerbera = document.querySelector(".cenagerbera");
+	kolgerbera.textContent = loadedGerbers.quantity;
+	cenagerbera.textContent = parseInt(loadedGerbers.quantity)*parseInt(loadedGerbers.price);
+};
+document.addEventListener('load', printg());
+
+function printSumTotal(){
+	var sumTotal = JSON.parse(sessionStorage.getItem('sumTotal'));
+	var ukCena = document.querySelector('.ukCena');
+	ukCena.textContent = sumTotal;
+}
+document.addEventListener('load', printSumTotal());
+
+
+	</script>
+-->
+
+</body>
+</html>

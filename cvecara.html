@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cvecara</title>
+	<meta charset="utf-8"/>
+	  <link rel="stylesheet" href="cvecara.css">
+	  <script src="cvecara.js" defer></script> 
+</head>
+<body>
+    <form action="" class="ukupna">
+        <label for="ukupnaCena">Sadržaj aranzmana: Ukupna cena </label>
+        <input id="ukupnaCena" type="text" value="99" oninput="sumauk()"> 
+    </form>
+
+    <table>
+    	<tr>
+    		<td>Ruza</td>
+    		<td>
+    			<form action=""> 
+        			<label for="kolicinar">Kolicina: </label><br>
+        			<input id="kolicinar" type="text" value="3" oninput="sumar(); sumauk()"> 
+    			</form> 
+			</td>
+    		<td>
+    			<form action="">
+        			<label for="ukupnacr">Ukupna cena: </label><br>
+        			<input id="ukupnacr" type="text" value="540" oninput="sumar()"> 
+    			</form>    			
+    		</td>
+    		<td>
+    			<form action="" class="pokom">
+        			<label for="pokomr">Po komadu: </label><br>
+        			<input id="pokomr" type="text" value="180"> 
+    			</form>    			
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>Ljiljan</td>
+    		<td>
+    			<form action="">
+        			<label for="kolicinal">Kolicina: </label><br>
+        			<input id="kolicinal" type="text" value="2" oninput="sumal(); sumauk()"> 
+    			</form>
+    		</td>
+    		<td>
+    			<form action="">
+        			<label for="ukupnacl">Ukupna cena: </label><br>
+        			<input id="ukupnacl" type="text" value="500" oninput="sumal()"> 
+    			</form>    			
+    		</td>
+    		<td>
+    			<form action="" class="pokom">
+        			<label for="pokoml">Po komadu: </label><br>
+        			<input id="pokoml" type="text" value="250"> 
+    			</form>    			
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>Gerber</td>
+    		<td>
+    			<form action="">
+        			<label for="kolicinag">Kolicina: </label><br>
+        			<input id="kolicinag" type="text" value="4" oninput="sumag(); sumauk()"> 
+    			</form>
+    		</td>
+    		<td>
+    			<form action="">
+        			<label for="ukupnacg">Ukupna cena: </label><br>
+        			<input id="ukupnacg" type="text" value="1220" oninput="sumag()"> 
+    			</form>    			
+    		</td>
+    		<td>
+    			<form action="" class="pokom">
+        			<label for="pokomg">Po komadu: </label><br>
+        			<input id="pokomg" type="text" value="305"> 
+    			</form>    			
+    		</td>
+    	</tr>
+    </table>
+    <form action = "./confirmation.html" method="GET" onsubmit="store()">
+    	<button>potvrdi kupovinu</button>
+    </form>
+</body>
+</html>
